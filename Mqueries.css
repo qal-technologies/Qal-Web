@@ -1,0 +1,59 @@
+@media screen and (min-width: 768px) {
+  .leftSide div.menu-tab {
+    display: none;
+  }
+
+  .leftSide ul {
+    display: flex;
+  }
+  #menu-bar {
+    display: none;
+  }
+
+  div.company-contact-comp {
+    justify-self: end;
+    align-content: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-visible {
+    padding-bottom: 50px;
+    border-end-end-radius: 10vmax;
+    border-end-start-radius: 10vmax;
+  }
+
+  .company-container {
+    place-content: center;
+    height: 500px;
+  }
+
+  .leftSide div.menu-tab {
+    display: grid;
+  }
+
+  .leftSide ul {
+    display: none;
+  }
+
+  footer section.upper div.links,
+  footer .upper div.developers,
+  footer .upper .partners {
+    display: none;
+  }
+
+  footer section.upper div {
+    width: 45%;
+  }
+
+  footer section.upper div.contact {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  footer section.upper div {
+    width: 100%;
+  }
+}

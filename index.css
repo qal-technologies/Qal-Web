@@ -1,0 +1,388 @@
+/* for intro section  */
+.intro-visible {
+  display: flex;
+  gap: 10px;
+  width: 100vw;
+  background: -webkit-linear-gradient(white, var(--main));
+  background: linear-gradient(white, var(--main));
+  background: url(../others/img/background.png);
+  height: auto;
+  color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  padding: 15px;
+  text-align: justify;
+  padding-block: 110px;
+  place-content: center;
+  user-select: none;
+  border-end-end-radius: 10vmin;
+  border-end-start-radius: 10vmin;
+  margin-top: -30px;
+}
+
+#intro {
+  display: flex;
+  flex-flow: wrap;
+  gap: 15vw;
+  column-gap: 30vw;
+  width: 100vw;
+  height: auto;
+  min-height: 200px;
+  place-content: center;
+}
+
+#intro-logo {
+  display: grid;
+  width: 400px;
+  object-fit: cover;
+  height: 400px;
+  place-content: center;
+}
+
+#intro-logo img {
+  display: grid;
+  width: 40vw;
+  min-width: 550px;
+  height: 40vw;
+  min-height: 550px;
+  place-content: center;
+}
+
+.intro-info {
+  display: grid;
+  place-content: center;
+  width: 500px;
+  border-radius: 20px;
+  border: none;
+  max-width: 400px;
+  opacity: 0;
+  padding: 20px;
+  user-select: none;
+  /* padding-right: 50px; */
+}
+
+.intro-companyname {
+  font-weight: bold;
+  text-align: center;
+  color: var(--dark-main);
+  font-family: Poppins-Bold, Arial, sans-serif;
+  font-size: 3.6rem;
+  letter-spacing: 9px;
+}
+
+hr {
+  background: var(--dark-main);
+  outline: none;
+  border: none;
+  height: 4px;
+  width: 70%;
+  justify-self: center;
+  border-radius: 20px;
+}
+
+.intro-message {
+  display: grid;
+  place-content: center;
+  width: max-content;
+  text-align: center;
+  padding: 20px;
+  padding-top: 25px;
+  font-family: Poppins-Medium, Arial, sans-serif;
+  color: var(--dark-main);
+  height: max-content;
+  font-size: 30px;
+}
+
+.highlight-color {
+  color: var(--main);
+  font-weight: bolder;
+  font-family: Poppins-Bold;
+}
+
+.highlight {
+  font-weight: bolder;
+  font-family: Poppins-Bold;
+}
+
+.intro-highlight {
+  display: flex;
+  font-size: 5fr;
+  padding: 10px;
+  background-image: linear-gradient(var(--main), var(--dark-main));
+  border-radius: 20px;
+  font-weight: bolder;
+  font-family: Poppins-Xbold;
+  color: white;
+}
+
+.intro-contact {
+  display: flex;
+  place-content: center;
+  gap: 10%;
+  width: 100%;
+  padding: 10px;
+  padding-top: 20px;
+  color: white;
+}
+
+.intro-contact a svg,
+.intro-contact a:link,
+.intro-contact a:visited {
+  color: white;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+}
+
+/* for company mission and vsion section  */
+
+#company-info {
+  display: grid;
+  padding: 10px;
+  padding-bottom: 50px;
+  margin-top: -60px;
+  user-select: text;
+}
+.company-info {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  column-gap: 5%;
+}
+
+/* mission and vission section  */
+#mission,
+#vision {
+  display: grid;
+  text-align: center;
+  width: auto;
+  max-width: 500px;
+  padding: 30px;
+  border: none;
+  border-radius: 60px;
+  color: rgb(30, 30, 30);
+  font-family: Poppins-Regular;
+  font-size: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  transition: all 500ms ease-in-out;
+  background: -webkit-linear-gradient(
+    rgba(240, 240, 240, 0.36),
+    var(--main-trans)
+  );
+  backdrop-filter: blur(20px);
+  padding-top: 35px;
+}
+
+/* icon for both mission and vision */
+.icon {
+  display: grid;
+  place-content: center;
+  padding-bottom: 50px;
+  border-bottom: 2px solid var(--dark-main);
+}
+
+/* for the svg of mission and vision */
+.icon svg {
+  width: 12em;
+  height: 12em;
+  color: var(--dark-main);
+  padding: 15px;
+  transition: all ease 100ms;
+}
+
+/* hover effect for both mission and vision icons */
+.icon svg:hover {
+  color: var(--main);
+}
+
+/* mission and vision statement header  */
+#mission h2,
+#vision h2 {
+  color: black;
+  font-family: Poppins-XBold;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  letter-spacing: 15px;
+  font-size: 35px;
+  user-select: none;
+  justify-self: center;
+}
+
+/* mission statement */
+#mission {
+  border-end-start-radius: 0px;
+  border-start-end-radius: 0px;
+  box-shadow: 0px 0px 10px rgba(19, 86, 154, 0.3);
+}
+
+/* vision statement */
+#vision {
+  border-end-end-radius: 0px;
+  border-start-start-radius: 0px;
+  box-shadow: 0px 0px 10px rgba(28, 61, 126, 0.3);
+}
+
+/* style for both mission and vision statement */
+p.statement {
+  padding-top: 25px;
+}
+
+/* for company info button  */
+#company-info a {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: var(--dark-main);
+  box-shadow: 0px 0px 10px rgba(28, 61, 126, 0.3);
+  backdrop-filter: blur(20px);
+  justify-self: center;
+  letter-spacing: 4px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Poppins-Regular;
+  color: white;
+  transition: all 500ms ease-in-out;
+}
+
+/* for hover effect of the company info button */
+#company-info a:hover {
+  background-color: var(--main);
+}
+
+/* main section  */
+#main {
+  background-color: whitesmoke;
+  border-start-start-radius: 25px;
+  border-start-end-radius: 25px;
+  padding: 10px;
+  padding-top: 15px;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+}
+
+/* trending section  */
+#trending-section {
+  display: grid;
+  gap: 5px;
+  padding: 5px;
+}
+
+/* for trending and project section header  */
+#trending-section h2,
+#project-section h2 {
+  place-content: center;
+  text-align: center;
+  font-family: Poppins-Xbold;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* trending section messages  */
+#trending {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 100px;
+  padding: 20px;
+  font-size: smaller;
+}
+
+/* style for each trending information in the trending section  */
+.trending-info {
+  display: grid;
+  font-size: 16px;
+  max-width: 450px;
+  min-width: 400px;
+  max-height: 100px;
+  min-height: 80px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.news-header {
+  width: 100%;
+  font-weight: bolder;
+  font-family: Poppins-Bold;
+  letter-spacing: 0.5px;
+  color: var(--dark-main);
+  font-size: 20px;
+  padding-inline: 0px;
+  display: flex;
+  padding-bottom: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trending-info #date {
+  display: flex;
+  font-size: x-small;
+  letter-spacing: 0.5px;
+  padding: 0px;
+}
+
+.trending-info .all-info {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.all-info .text-info {
+  gap: 8px;
+  display: grid;
+  letter-spacing: 0px;
+}
+
+#trending-photo {
+  display: grid;
+  place-content: center;
+  align-items: center;
+  object-fit: fill;
+  width: 60px;
+  height: 60px;
+}
+
+.trending-photo {
+  border-radius: 10px;
+  border: 1px solid var(--main-trans);
+  width: 60px;
+  height: 60px;
+}
+
+.news-message {
+  font-size: smaller;
+  font-family: Poppins-Regular;
+  width: 100%;
+  letter-spacing: normal;
+  display: flex;
+}
+
+.news-link {
+  display: grid;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  height: max-content;
+  justify-self: center;
+  color: var(--dark-main);
+  background-color: var(--main-trans);
+  padding: 6px;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: all ease-in-out 500ms;
+}
+.news-link:hover {
+  background-color: var(--dark-main);
+  color: white;
+}

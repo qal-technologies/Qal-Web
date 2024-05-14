@@ -1,0 +1,108 @@
+:root {
+  --main: rgb(50, 150, 250);
+  --dark-main: rgb(13, 44, 169);
+  --blur: blur(20px);
+  --main-trans: rgba(50, 150, 250, 0.5);
+  --dark-main-trans: rgba(8, 80, 200, 0.5);
+  --linear-gradient: linear-gradient(var(--main), var(--dark-main));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  transition: all ease-in-out 500ms;
+  font-family: Poppins-Regular, Poppins-Bold, Poppins-Semi, Poppins-Light,
+    Poppins-Thin, Poppins-Xlight, Poppins-Xbold, Poppins-Medium, Arial,
+    sans-serif;
+  color-interpolation-filters: auto;
+  color-scheme: light;
+}
+
+body,
+html {
+  background-position: 100%;
+  background-attachment: fixed;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+  color-scheme: light;
+  overflow: auto;
+}
+
+body div.body {
+  background: whitesmoke;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.selNone {
+  user-select: none;
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(../others/font/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(../others/font/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Semi;
+  src: url(../others/font/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Thin;
+  src: url(../others/font/Poppins-Thin.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url(../others/font/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Xlight;
+  src: url(../others/font/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Xbold;
+  src: url(../others/font/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(../others/font/Poppins-Medium.ttf);
+}
+
+div.up-arrow {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  z-index: 999;
+  background-color: var(--dark-main-trans);
+  backdrop-filter: blur(20px);
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-content: center;
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  border-radius: 50%;
+  color: white;
+}
+
+div.up-arrow:hover{
+  background-color: var(--main);
+}

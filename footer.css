@@ -1,0 +1,115 @@
+footer {
+  width: 100vw;
+  height: max-content;
+  display: grid;
+  gap: 20px;
+}
+
+footer section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 100%;
+  height: max-content;
+  place-content: center;
+  padding: 50px;
+}
+
+footer section.upper div {
+  width: auto;
+  height: auto;
+  min-width: 200px;
+  display: block;
+  line-height: 35px;
+  color: rgb(80, 80, 80);
+  user-select: none;
+}
+
+footer div h3 {
+  font-size: 25px;
+  color: black;
+  letter-spacing: 5px;
+}
+
+footer a {
+  color: rgb(80, 80, 80);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer ul {
+  text-align: left;
+}
+
+footer .contact ul a {
+  line-height: 35px;
+  display: flex;
+  width: 80%;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+  padding: 0;
+  padding-right: 10px;
+}
+
+footer .contact svg {
+  width: 22px;
+  height: 22px;
+}
+
+footer section.lower {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: rgba(230, 230, 230, 0.2);
+  padding: 20px;
+  gap: 10px;
+}
+
+footer section.lower div.more-info {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  padding: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+section.lower .more-info div.email {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  width: 100%;
+  min-width: 350px;
+  gap: 10px;
+}
+
+section.lower .more-info input {
+  min-width: 300px;
+  width: 60%;
+  padding: 10px;
+  border: 2px solid rgba(13, 44, 169, 0.3);
+  border-radius: 10px;
+  background: white;
+  outline: none;
+}
+
+section.lower .more-info input:focus {
+  border-color: rgba(13, 44, 169);
+}
+
+.lower .more-info button {
+  padding: 10px;
+  background-color: var(--dark-main-trans);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  place-content: center;
+}
+.lower .more-info button:hover{
+    background-color: var(--main);
+}
